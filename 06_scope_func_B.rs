@@ -15,8 +15,8 @@ fn main() {
     //println!("s = {}", s);
 
     //e4
-    let mut s2 = String::from("Second String");
-    s3 = takes_and_return_ownership(s2);
+    let s2 = String::from("Second String");
+    let s3 = takes_and_return_ownership(s2);
     println!("s3 = {}", s3);
 
 
@@ -35,6 +35,5 @@ fn add_five(some_integer: i32) { // some_integer comes into scope
 
 fn takes_and_return_ownership(some_string: String) -> String { // some_string comes into scope
     println!("{}", some_string);
-    return some_string;
-} // Here, some_string goes out of scope and `drop` is called. The backing
-  // memory is freed.
+    some_string // some_string is returned and moves out to the calling function
+}  

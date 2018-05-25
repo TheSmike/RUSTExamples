@@ -1,13 +1,14 @@
 fn main() {
-    let s = String::from("A perfect circle");
+    let s1 = String::from("A perfect circle");
 
-    borrow_string(&s);
-    borrow_string(&s);
-    //use_string(s);
+    borrow_string(&s1);
+    borrow_string(&s1);
+    //use_string(s1);
     //e1:
     //use_string(s);
 
-    
+
+    let s  = String::from("First text");    
 
     let r1 = &s;
     let r2 = &s;
