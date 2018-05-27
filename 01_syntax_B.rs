@@ -33,5 +33,6 @@ fn build_user_from_another(user1 : User) -> User{
 		..user1
 	};
 
-	 user2
+	user2
 }
+
