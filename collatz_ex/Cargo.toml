@@ -1,0 +1,6 @@
+[package]
+name = "collatz_ex"
+version = "0.1.0"
+authors = ["smike86 <mike.smike86@gmail.com>"]
+
+[dependencies]

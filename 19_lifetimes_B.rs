@@ -10,8 +10,7 @@ fn main() {
 		println!("The longest string is '{}'", result);
     } else {
 		let medium = String::from("medium long text");
-		let result; 
-        result = longest(string1.as_str(), medium.as_str());
+		let result = longest(string1.as_str(), medium.as_str());
 		println!("The longest string is '{}'", result);
 	}
     //move result and println out...

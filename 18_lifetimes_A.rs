@@ -9,7 +9,8 @@ fn main(){
 	}
 
 	//ex2: don't need lifetime parameter
-	let first = print_y_and_ref_first("apc", 1);
+	let s = String::from("apc");
+	let first = print_y_and_ref_first(&s, 1);
 	println!("first is {}\n", first);
 
 	//ex3: don't need lifetime parameter
